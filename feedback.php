@@ -32,7 +32,7 @@ require_once "blocks/head.php"?>
                     cache: false,
                     data: {'name': name, 'email': email, 'subject': subject, 'message':message},
                     dataType: 'html',
-                    success: function (date){                        
+                    success: function (data){                        
                             $('#messageShow').html (data + "<div class='clear'><br></div>");
                             $('#messageShow').show ();
                     }
